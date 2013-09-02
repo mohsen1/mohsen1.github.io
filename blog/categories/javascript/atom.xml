@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: JavaScript | Mohsen Azimi]]></title>
+  <link href="http://mohsen1.github.io/blog/categories/javascript/atom.xml" rel="self"/>
+  <link href="http://mohsen1.github.io/"/>
+  <updated>2013-09-02T07:44:56-07:00</updated>
+  <id>http://mohsen1.github.io/</id>
+  <author>
+    <name><![CDATA[Mohsen Azimi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Unfreeze a JavaScript Object]]></title>
+    <link href="http://mohsen1.github.io/blog/2012/10/11/unfreeze-a-javascript-object/"/>
+    <updated>2012-10-11T00:00:00-07:00</updated>
+    <id>http://mohsen1.github.io/blog/2012/10/11/unfreeze-a-javascript-object</id>
+    <content type="html"><![CDATA[<h1>Object.prototype.freeze</h1>
+
+
+<p><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/Object/freeze" target="_blank"><code>Object.freeze()</code></a> can easily make an object un-editable. After you freeze an object you can not touch it's properties. Deleting or changing frozen objects doesn't throw an error but doen't take effect either.</p>
+
+
+<pre>
+var o = {val: 1};
+Object.freeze(o);
+o.val = 2; // this will not make any change to `o`
+Object.isFrozen(o); // true
+o.val === 1; // true
+</pre>
+
+
+<h1>Why do we need to unfreeze an object?</h1>
+
+
+<p>It seems strange to freeze an object at first place and then try to unfreeze it afterwards. But in some situations you don't have control over all codebase and you face frozen objects that and you want to change that object for reasons like debugging, testing, etc.</p>
+
+
+<p>For example I was writing Jasmine tests for my WinJS application and Jasmine's <code>spy()</code> method was not able spy on frozen WinJS objects methods. Windows doesn't allow developers to touch WinJS code.</p>
+
+
+<p>Freezing an object is the ultimate form of lock-down. Once an object has been frozen it cannot be unfrozen - nor can it be tampered in any manner.</p>
+
+
+<h1>How to unfreeze?</h1>
+
+
+<p>Basically you can not unfreeze an object using JavaScript language methods. There is no <code>Object.unfreeze()</code> Method. Unfortunately a "copy" of the frozen Object is frozen too:</p>
+
+
+<pre>
+var o = {val: 1};
+Object.freeze(o);
+var _o = o;
+Object.isFrozen(_o) // true
+</pre>
+
+
+<p>Solution is to clone the frozen object and work with that object instead. By creating a brand new object and filling all properties from original(frozen) object to it we get equal object that is not frozen.</p>
+
+
+<pre>
+var obj = {val: 1, max: 10};
+Object.freeze(obj)
+var _obj = {};
+for (var prop in obj) {
+   if(obj.hasOwnProperty(prop)) {
+      _obj[prop] = obj[prop];
+   }
+}
+Object.isFrozen(_obj); //false
+//now you can replace original object with the unfrozen one
+obj = _obj;
+</pre>
+
+]]></content>
+  </entry>
+  
+</feed>

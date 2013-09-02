@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Experiments | Mohsen Azimi]]></title>
+  <link href="http://mohsen1.github.io/blog/categories/experiments/atom.xml" rel="self"/>
+  <link href="http://mohsen1.github.io/"/>
+  <updated>2013-09-02T07:44:56-07:00</updated>
+  <id>http://mohsen1.github.io/</id>
+  <author>
+    <name><![CDATA[Mohsen Azimi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Sliding Puzzle]]></title>
+    <link href="http://mohsen1.github.io/blog/2012/02/21/sliding-puzzle/"/>
+    <updated>2012-02-21T00:00:00-08:00</updated>
+    <id>http://mohsen1.github.io/blog/2012/02/21/sliding-puzzle</id>
+    <content type="html"><![CDATA[<p><img src="http://mohsenweb.com/images/slidingpuzzle.png" alt="" /></p>
+
+<p><a href="http://mohsenweb.com/experiments/slidingpuzzle/">This</a> is an sliding puzzle web application that can be played from size 2x2 to 9x9. You can drag images from your desktop into the browser to make your own puzzle and enjoy playing sliding puzzle.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[CSS3 Only Analog Clock]]></title>
+    <link href="http://mohsen1.github.io/blog/2012/02/21/css3-only-analog-clock/"/>
+    <updated>2012-02-21T00:00:00-08:00</updated>
+    <id>http://mohsen1.github.io/blog/2012/02/21/css3-only-analog-clock</id>
+    <content type="html"><![CDATA[<p><img src="http://mohsenweb.com/images/cssclock.png" alt="" />
+<a href="http://mohsenweb.com/experiments/CSSClock/">This</a> is an analog clock that uses zero images and no JavaScript for animation. JavaScript is used only to get current time from browser Date and Time API. This clock is first clock that have haptic feedback animation second hand.</p>
+
+<p><a href="http://mohsenweb.com/experiments/CSSClock/">Lunch the experiment</a></p>
+
+<!--more-->
+
+
+<h3>CSS Code</h3>
+
+
+<pre>
+body{
+    font-family:arial;
+}
+.clock{
+    position:absolute;
+    width:300px;
+    height:300px;
+    border:1px solid black;
+    border-radius:50%;
+}
+.point{
+    position:absolute;
+    width:10px;
+    height:10px;
+    left:150px;
+    top:150px;
+    margin: -5px 0 0 -5px;
+    border-radius:50%;
+    background:black;
+}
+.center.point{
+    -webkit-transform:none;
+}
+.numbers, .points, .tune, .glass{
+    position:absolute;
+    width:100%;
+    height:100%;
+    left:0;
+    top:0;
+    border-radius:50%;
+}
+.number{
+    position:absolute;
+    width:40px; 
+    height:40px;
+    font-size:40px;
+    text-align:center;
+    line-height:40px;
+}
+.n12{
+    left:50%;
+    margin-left:-20px;
+}
+.n9{
+    top:50%;
+    margin-top:-20px;
+}
+.n3{
+    top:50%;
+    right:0;
+    margin-top:-20px;
+}
+.n6{
+    bottom:0;
+    left:50%;
+    margin-left:-20px;
+}
+.point{
+    -webkit-transform-origin: -139px 5px;
+}
+.p1{
+    -webkit-transform: translateX(144px) rotate(-60deg);
+}
+.p2{
+    -webkit-transform: translateX(144px) rotate(-30deg);
+}
+.p3{
+    -webkit-transform: translateX(144px) rotate(0deg);
+}
+.p4{
+    -webkit-transform: translateX(144px) rotate(30deg);
+}
+.p5{
+    -webkit-transform: translateX(144px) rotate(60deg);
+}
+.p6{
+    -webkit-transform: translateX(144px) rotate(90deg);
+}
+.p7{
+    -webkit-transform: translateX(144px) rotate(120deg);
+}
+.p8{
+    -webkit-transform: translateX(144px) rotate(150deg);
+}
+.p9{
+    -webkit-transform: translateX(144px) rotate(180deg);
+}
+.p10{
+    -webkit-transform: translateX(144px) rotate(210deg);
+}
+.p11{
+    -webkit-transform: translateX(144px) rotate(240deg);
+}
+.p12{
+    -webkit-transform: translateX(144px) rotate(270deg);
+}
+.hand{
+    position:absolute;
+    left:150px;
+    top:150px;
+    background:black;
+    -webkit-transform-origin: 0 50%;
+}
+.minute{
+    width:120px;
+    height:8px;
+    margin-top:-4px;
+    -webkit-transform: rotate(-30deg);
+}
+.hour{
+    width:80px;
+    height:12px;
+    margin-top:-6px;
+    -webkit-transform: rotate(210deg);
+}
+.secondWrapper{
+    position:absolute;
+    width:100%;
+    height:100%;
+    left:0;
+    top:0;
+}
+.second{
+    width:130px;
+    height:2px;
+    margin-top:-1px;
+    background:red;
+}
+.move .secondWrapper{
+    -webkit-animation: rotate 60s infinite;
+    -webkit-transform-origin: 50% 50%;
+    -webkit-animation-timing-function: linear;
+}
+.move .second{
+    -webkit-animation:second 1s infinite;
+    -webkit-animation-timing-function: linear;
+}
+.move .minute{
+    -webkit-animation:rotate 3600s infinite;
+    -webkit-animation-timing-function: linear;
+}
+.move .hour{
+    -webkit-animation:rotate 43200s infinite;
+    -webkit-animation-timing-function: linear;
+}
+
+
+
+
+/* animations */
+@-webkit-keyframes rotate{
+    0%{
+        -webkit-transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(360deg);
+    }
+}
+@-webkit-keyframes second{
+    0%{
+        -webkit-transform: rotate(2deg);
+    }
+    5%{ 
+        -webkit-transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(-6deg);
+    }
+}
+
+
+
+
+
+
+
+/* Styling */
+
+
+.wrapper{
+    width:330px;
+    height:330px;
+    position:absolute;
+    border-radius:50%;
+    background:
+        -webkit-radial-gradient(hsl(0, 100%, 27%) 4%, hsl(0, 100%, 18%) 9%, hsla(0, 100%, 20%, 0) 9%) 0 0,
+        -webkit-radial-gradient(hsl(0, 100%, 27%) 4%, hsl(0, 100%, 18%) 8%, hsla(0, 100%, 20%, 0) 10%) 50px 50px,
+        -webkit-radial-gradient(hsla(0, 100%, 30%, 0.8) 20%, hsla(0, 100%, 20%, 0)) 50px 0,
+        -webkit-radial-gradient(hsla(0, 100%, 30%, 0.8) 20%, hsla(0, 100%, 20%, 0)) 0 50px,
+        -webkit-radial-gradient(hsla(0, 100%, 20%, 1) 35%, hsla(0, 100%, 20%, 0) 60%) 50px 0,
+        -webkit-radial-gradient(hsla(0, 100%, 20%, 1) 35%, hsla(0, 100%, 20%, 0) 60%) 100px 50px,
+        -webkit-radial-gradient(hsla(0, 100%, 15%, 0.7), hsla(0, 100%, 20%, 0)) 0 0,
+        -webkit-radial-gradient(hsla(0, 100%, 15%, 0.7), hsla(0, 100%, 20%, 0)) 50px 50px,
+        -webkit-linear-gradient(45deg, hsla(0, 100%, 20%, 0) 49%, hsla(0, 100%, 0%, 1) 50%, hsla(0, 100%, 20%, 0) 70%) 0 0,
+        -webkit-linear-gradient(-45deg, hsla(0, 100%, 20%, 0) 49%, hsla(0, 100%, 0%, 1) 50%, hsla(0, 100%, 20%, 0) 70%) 0 0;
+background-color: #300; 
+background-size: 100px 100px;
+    box-shadow: 0 0 15px black,
+                inset 0 0 10px white;
+}
+.clock{
+    margin:15px;
+    border:none;
+    background:
+        -webkit-radial-gradient(black 15%, transparent 16%) 0 0,
+        -webkit-radial-gradient(black 15%, transparent 16%) 8px 8px,
+        -webkit-radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+        -webkit-radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+    background-color:#282828;
+    background-size:16px 16px;
+    color:white;
+}
+.point{
+    background:gray;
+}
+.hand{
+    background: -webkit-linear-gradient(left, hsla(222, 17%, 65%, 1) 0%,hsla(222, 26%, 53%, 1) 100%); 
+    box-shadow:0 0 20px rgba(255,255,255,0.3);
+}
+.second.hand{
+    background:red;
+    box-shadow:none;
+    border:none;
+
+}
+
+.center{
+    background:black;
+}
+
+.number{
+    opacity:0.65;
+    font-weight:bold;
+}
+
+.glass{
+    box-shadow: inset 0 0 90px rgba(205, 230,255,0.4);
+}
+
+</pre>
+
+]]></content>
+  </entry>
+  
+</feed>

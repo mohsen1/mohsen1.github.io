@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Contributes | Mohsen Azimi]]></title>
+  <link href="http://mohsen1.github.io/blog/categories/contributes/atom.xml" rel="self"/>
+  <link href="http://mohsen1.github.io/"/>
+  <updated>2013-09-02T07:44:56-07:00</updated>
+  <id>http://mohsen1.github.io/</id>
+  <author>
+    <name><![CDATA[Mohsen Azimi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Making a web application in open source community in less than 24 hours]]></title>
+    <link href="http://mohsen1.github.io/blog/2012/02/21/making-a-web-application/"/>
+    <updated>2012-02-21T00:00:00-08:00</updated>
+    <id>http://mohsen1.github.io/blog/2012/02/21/making-a-web-application</id>
+    <content type="html"><![CDATA[<p><img src="http://mohsenweb.com/images/megif.png" alt="" /></p>
+
+<br />
+
+
+<p>I was part of <a href="https://github.com/h5bp/mothereffinganimatedgif/network/members">team</a> developing <a href="https://twitter.com/#!/paul_irish">Paul Irish</a>&rsquo;s idea in his <a href="https://twitter.com/#!/paul_irish/status/169999430215405568">tweet</a> of making a web application that convert multiple images into an animated GIF file and here is the application: <a href="http://mothereffinganimatedgif.com/">mothereffinganimatedgif.com</a></p>
+]]></content>
+  </entry>
+  
+</feed>

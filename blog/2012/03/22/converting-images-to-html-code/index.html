@@ -1,0 +1,222 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Converting Images to HTML code - Mohsen Azimi</title>
+  <meta name="author" content="Mohsen Azimi">
+
+  
+  <meta name="description" content="I was thinking to a workaround for showing images in email clients that block images. I found out that most of email clients are rendering HTML code &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://mohsen1.github.io/blog/2012/03/22/converting-images-to-html-code">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Mohsen Azimi" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Mohsen Azimi</a></h1>
+  
+    <h2>JavaScript and mobile web</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:mohsen1.github.io" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Converting Images to HTML Code</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-03-22T00:00:00-07:00" pubdate data-updated="true">Mar 22<span>nd</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content">I was thinking to a workaround for showing images in email clients that block images. I found out that most of email clients are rendering HTML code. Based on this fact we can show images by hacking HTML code to show each pixel of image as a HTML element and then make background color of that element equal to color of pixel we are presenting. Of course HTML elements should be 1px by 1px without any border, margin or padding.
+
+I started prototyping my idea and after a little bit of tweaking I was able to generate HTML code that is actually renders final result just like original image, pixel per pixel. I used HTML5 canvas element to read image pixels. This means the whole process can happen inside the browser!
+
+I created a <a href="https://github.com/mohsen1/img2html" title="Repo">Github repo</a> here to demonstrate my work. I will optimize the code to make it usable in production.
+
+Using the <a href="http://mohsen1.github.com/img2html/#">web app</a> is as easy as dragging an image from your desktop in the browser when the app is open in your browser. Please test with an small image. Processing big images takes more than usual. I&#8217;ve tried sending the processing to a Web Worker but unfortunately web workers don&#8217;t run JavaScript in window scope and therefore there is no HTML Canvas element in worker environment to use for image analyzing. 
+<strong><a href="http://mohsen1.github.com/img2html/#">Try the web app here</a>. </strong>
+
+<img src="http://i.imgur.com/n5iSE.png" alt="" />
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Mohsen Azimi</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-03-22T00:00:00-07:00" pubdate data-updated="true">Mar 22<span>nd</span>, 2012</time>
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://mohsen1.github.io/blog/2012/03/22/converting-images-to-html-code/" data-via="" data-counturl="http://mohsen1.github.io/blog/2012/03/22/converting-images-to-html-code/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2012/03/17/backbone-todo/" title="Previous Post: Making a simple todo app using Backbone.js">&laquo; Making a simple todo app using Backbone.js</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2012/10/11/unfreeze-a-javascript-object/" title="Next Post: Unfreeze a JavaScript Object">Unfreeze a JavaScript Object &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/03/06/my-js1k-submission/">My JS1K Submission</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/01/17/how-did-i-use-node-js-to-remotely-control-my-google-tv/">How Did I Use Node.js to Remotely Control My Google TV</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/10/14/quick-sprite/">Quick Sprite: A Tool for Creating CSS Sprite Images in Browser</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/10/12/underscore-js-deep-pluck-mixin/">Underscore.js Deep Pluck Mixin</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/10/12/chrome-developer-tools-dark-theme/">Chrome Developer Tools Dark Theme</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Mohsen Azimi -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>
