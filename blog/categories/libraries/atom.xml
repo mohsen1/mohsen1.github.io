@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: libraries, | Mohsen Azimi]]></title>
+  <link href="http://mohsen1.github.io/blog/categories/libraries/atom.xml" rel="self"/>
+  <link href="http://mohsen1.github.io/"/>
+  <updated>2013-09-14T18:24:27-07:00</updated>
+  <id>http://mohsen1.github.io/</id>
+  <author>
+    <name><![CDATA[Mohsen Azimi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[String Direction in JavaScript]]></title>
+    <link href="http://mohsen1.github.io/blog/2013/09/14/string-direction-in-javascript/"/>
+    <updated>2013-09-14T17:25:00-07:00</updated>
+    <id>http://mohsen1.github.io/blog/2013/09/14/string-direction-in-javascript</id>
+    <content type="html"><![CDATA[<p>My weekend project is a NPM module for detecting text direction in JavaScript. Detecting text direction is useful when we are working with bi-directional(bidi) text or when we have users with different languages using our app.</p>
+
+<p>For example, a <code>textarea</code> element can be smart and changes it&rsquo;s <code>dir</code> to <code>rtl</code> attribute when it sees right-to-left content in it. <a href="http://jsbin.com/oPiKIhA/3">This demo in JSBin</a> shows how it can work.</p>
+
+<p><img src="/images/3mdhk.gif" alt="Demo" /></p>
+
+<p>Using the module is pretty easy. You can either expose <code>getDirection</code> method to <code>String.prototype</code> or use it directly.</p>
+
+<p>Using it directly
+``` javascript
+var stringDirection = require(&lsquo;string-direction&rsquo;);</p>
+
+<p>stringDirection.getDirection(&ldquo;Hello, world!&rdquo;); // &lsquo;ltr&rsquo;
+stringDirection.getDirection(&ldquo;سلام دنیا&rdquo;); // &lsquo;rtl&rsquo;
+```</p>
+
+<p>Patching <code>String</code> object
+``` javascript
+require(&lsquo;string-direction&rsquo;).patch();</p>
+
+<p>&ldquo;Hello, world!&rdquo;.getDirection(); // &ldquo;ltr&rdquo;
+&ldquo;سلام دنیا&rdquo;.getDirection(); // &ldquo;rtl&rdquo;
+```</p>
+
+<p>String Direction module can be used in browser and NodeJS environment. You can find it in <a href="https://npmjs.org/package/string-direction">NPM registry</a> or in <a href="https://github.com/mohsen1/string-direction">Github</a>.</p>
+
+<p>If you found any issues, please <a href="https://github.com/mohsen1/string-direction/issues">file one in Github</a>.</p>
+]]></content>
+  </entry>
+  
+</feed>

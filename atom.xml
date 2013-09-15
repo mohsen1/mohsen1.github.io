@@ -4,7 +4,7 @@
   <title><![CDATA[Mohsen Azimi]]></title>
   <link href="http://mohsen1.github.io/atom.xml" rel="self"/>
   <link href="http://mohsen1.github.io/"/>
-  <updated>2013-09-02T07:44:56-07:00</updated>
+  <updated>2013-09-14T18:24:27-07:00</updated>
   <id>http://mohsen1.github.io/</id>
   <author>
     <name><![CDATA[Mohsen Azimi]]></name>
@@ -14,15 +14,60 @@
 
   
   <entry>
+    <title type="html"><![CDATA[String Direction in JavaScript]]></title>
+    <link href="http://mohsen1.github.io/blog/2013/09/14/string-direction-in-javascript/"/>
+    <updated>2013-09-14T17:25:00-07:00</updated>
+    <id>http://mohsen1.github.io/blog/2013/09/14/string-direction-in-javascript</id>
+    <content type="html"><![CDATA[<p>My weekend project is a NPM module for detecting text direction in JavaScript. Detecting text direction is useful when we are working with bi-directional(bidi) text or when we have users with different languages using our app.</p>
+
+<p>For example, a <code>textarea</code> element can be smart and changes it&rsquo;s <code>dir</code> to <code>rtl</code> attribute when it sees right-to-left content in it. <a href="http://jsbin.com/oPiKIhA/3">This demo in JSBin</a> shows how it can work.</p>
+
+<p><img src="http://mohsen1.github.io/images/3mdhk.gif" alt="Demo" /></p>
+
+<p>Using the module is pretty easy. You can either expose <code>getDirection</code> method to <code>String.prototype</code> or use it directly.</p>
+
+<p>Using it directly</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="kd">var</span> <span class="nx">stringDirection</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;string-direction&#39;</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'><span class="nx">stringDirection</span><span class="p">.</span><span class="nx">getDirection</span><span class="p">(</span><span class="s2">&quot;Hello, world!&quot;</span><span class="p">);</span> <span class="c1">// &#39;ltr&#39;</span>
+</span><span class='line'><span class="nx">stringDirection</span><span class="p">.</span><span class="nx">getDirection</span><span class="p">(</span><span class="s2">&quot;سلام دنیا&quot;</span><span class="p">);</span> <span class="c1">// &#39;rtl&#39;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Patching <code>String</code> object</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nx">require</span><span class="p">(</span><span class="s1">&#39;string-direction&#39;</span><span class="p">).</span><span class="nx">patch</span><span class="p">();</span>
+</span><span class='line'>
+</span><span class='line'><span class="s2">&quot;Hello, world!&quot;</span><span class="p">.</span><span class="nx">getDirection</span><span class="p">();</span> <span class="c1">// &quot;ltr&quot;</span>
+</span><span class='line'><span class="s2">&quot;سلام دنیا&quot;</span><span class="p">.</span><span class="nx">getDirection</span><span class="p">();</span> <span class="c1">// &quot;rtl&quot;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>String Direction module can be used in browser and NodeJS environment. You can find it in <a href="https://npmjs.org/package/string-direction">NPM registry</a> or in <a href="https://github.com/mohsen1/string-direction">Github</a>.</p>
+
+<p>If you found any issues, please <a href="https://github.com/mohsen1/string-direction/issues">file one in Github</a>.</p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[My JS1K Submission]]></title>
     <link href="http://mohsen1.github.io/blog/2013/03/06/my-js1k-submission/"/>
     <updated>2013-03-06T00:00:00-08:00</updated>
     <id>http://mohsen1.github.io/blog/2013/03/06/my-js1k-submission</id>
     <content type="html"><![CDATA[<h2>Submission</h2>
 Today I&#8217;ve submitted my cody to JS1K contest. My submission is a math formula graphing tool that accepts complex math formulas and print it&#8217;s graph on a canvas. User can zoom in and out with mouse wheel and also pan with mouse click and drag. Math formulas can get complex with <code>sin</code>, <code>cos</code>, <code>^</code>, <code>tan</code>, etc.
-
+<p>
 <a href="http://js1k.com/2013-spring/demo/1426"><img class="alignnone size-medium wp-image-102" title="Screen shot" src="http://mohsenweb.com/wp-content/uploads/2013/03/Screen-Shot-2013-03-05-at-11.03.31-PM-283x300.png" alt="" width="283" height="300" /></a>
-
+</p>
 <a href="http://js1k.com/2013-spring/demo/1426">My submission: Math formula graphing tool</a>
 <h2>Developer tool</h2>
 I&#8217;ve also created a small tool using Node.js to monitor my JavaScript file length and refresh the browser in the fly on file changes. You can find this tool<a href="https://github.com/mohsen1/js1ktool"> here at Github</a>.
@@ -39,13 +84,13 @@ I&#8217;ve also created a small tool using Node.js to monitor my JavaScript file
     <content type="html"><![CDATA[I have a Google TV which I love it! I can browse web in my TV that is awesome but I don&#8217;t really want to interact with my TV, I just want to watch videos on my big screen.
 
 I love the fact that I can send YouTube videos to my Google TV. I usually use my laptop when I&#8217;m in front of TV and I wanted to send videos from browser to Google TV. I wrote a simple Node.js server to receive videos from browser and send them to Google TV. A Google Chrome extension made it easy to send videos right from right click menu
-
+<p>
 <img src="http://i.imgur.com/6oTCe.png" alt="" />
-
+</p>
 A web app in Google tv which is a Socket.IO client with a full screen video element receive videos and play them.
-
+<p>
 <img src="http://i.imgur.com/6pIEY.jpg" alt="" width="500px" />
-
+</p>
 I also binded Google TV&#8217;s custom buttons (Play, FFW, etc) to video player and now I can easily send videos from my browser to Google TV.
 
 Pairing chrome extension and Google TV client is not very user friendly at the moment. It needs a little hacking. As soon as I do final touchups and make it easy to pair I will publish both source code and chrome extension.
