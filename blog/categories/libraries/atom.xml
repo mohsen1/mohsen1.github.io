@@ -4,7 +4,7 @@
   <title><![CDATA[Category: libraries, | Mohsen Azimi]]></title>
   <link href="http://mohsen1.github.io/blog/categories/libraries/atom.xml" rel="self"/>
   <link href="http://mohsen1.github.io/"/>
-  <updated>2013-09-14T18:54:43-07:00</updated>
+  <updated>2013-09-15T11:52:21-07:00</updated>
   <id>http://mohsen1.github.io/</id>
   <author>
     <name><![CDATA[Mohsen Azimi]]></name>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[String Direction in JavaScript]]></title>
-    <link href="http://mohsen1.github.io/blog/2013/09/14/string-direction-in-javascript/"/>
+    <link href="http://mohsen1.github.io/string-direction-in-javascript/"/>
     <updated>2013-09-14T17:25:00-07:00</updated>
-    <id>http://mohsen1.github.io/blog/2013/09/14/string-direction-in-javascript</id>
+    <id>http://mohsen1.github.io/string-direction-in-javascript</id>
     <content type="html"><![CDATA[<p>My weekend project is a NPM module for detecting text direction in JavaScript. Detecting text direction is useful when we are working with bi-directional(bidi) text or when we have users with different languages using our app.</p>
 
 <p>For example, a <code>textarea</code> element can be smart and changes it&rsquo;s <code>dir</code> to <code>rtl</code> attribute when it sees right-to-left content in it. <a href="http://jsbin.com/oPiKIhA/3">This demo in JSBin</a> shows how it can work.</p>

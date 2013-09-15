@@ -4,7 +4,7 @@
   <title><![CDATA[Mohsen Azimi]]></title>
   <link href="http://mohsen1.github.io/atom.xml" rel="self"/>
   <link href="http://mohsen1.github.io/"/>
-  <updated>2013-09-14T18:54:43-07:00</updated>
+  <updated>2013-09-15T11:52:21-07:00</updated>
   <id>http://mohsen1.github.io/</id>
   <author>
     <name><![CDATA[Mohsen Azimi]]></name>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[String Direction in JavaScript]]></title>
-    <link href="http://mohsen1.github.io/blog/2013/09/14/string-direction-in-javascript/"/>
+    <link href="http://mohsen1.github.io/string-direction-in-javascript/"/>
     <updated>2013-09-14T17:25:00-07:00</updated>
-    <id>http://mohsen1.github.io/blog/2013/09/14/string-direction-in-javascript</id>
+    <id>http://mohsen1.github.io/string-direction-in-javascript</id>
     <content type="html"><![CDATA[<p>My weekend project is a NPM module for detecting text direction in JavaScript. Detecting text direction is useful when we are working with bi-directional(bidi) text or when we have users with different languages using our app.</p>
 
 <p>For example, a <code>textarea</code> element can be smart and changes it&rsquo;s <code>dir</code> to <code>rtl</code> attribute when it sees right-to-left content in it. <a href="http://jsbin.com/oPiKIhA/3">This demo in JSBin</a> shows how it can work.</p>
@@ -60,9 +60,9 @@
   
   <entry>
     <title type="html"><![CDATA[My JS1K Submission]]></title>
-    <link href="http://mohsen1.github.io/blog/2013/03/06/my-js1k-submission/"/>
+    <link href="http://mohsen1.github.io/my-js1k-submission/"/>
     <updated>2013-03-06T00:00:00-08:00</updated>
-    <id>http://mohsen1.github.io/blog/2013/03/06/my-js1k-submission</id>
+    <id>http://mohsen1.github.io/my-js1k-submission</id>
     <content type="html"><![CDATA[<h2>Submission</h2>
 Today I&#8217;ve submitted my cody to JS1K contest. My submission is a math formula graphing tool that accepts complex math formulas and print it&#8217;s graph on a canvas. User can zoom in and out with mouse wheel and also pan with mouse click and drag. Math formulas can get complex with <code>sin</code>, <code>cos</code>, <code>^</code>, <code>tan</code>, etc.
 <p>
@@ -78,9 +78,9 @@ I&#8217;ve also created a small tool using Node.js to monitor my JavaScript file
   
   <entry>
     <title type="html"><![CDATA[How did I use Node.js to remotely control my Google TV]]></title>
-    <link href="http://mohsen1.github.io/blog/2013/01/17/how-did-i-use-node-js-to-remotely-control-my-google-tv/"/>
+    <link href="http://mohsen1.github.io/how-did-i-use-node-js-to-remotely-control-my-google-tv/"/>
     <updated>2013-01-17T00:00:00-08:00</updated>
-    <id>http://mohsen1.github.io/blog/2013/01/17/how-did-i-use-node-js-to-remotely-control-my-google-tv</id>
+    <id>http://mohsen1.github.io/how-did-i-use-node-js-to-remotely-control-my-google-tv</id>
     <content type="html"><![CDATA[I have a Google TV which I love it! I can browse web in my TV that is awesome but I don&#8217;t really want to interact with my TV, I just want to watch videos on my big screen.
 
 I love the fact that I can send YouTube videos to my Google TV. I usually use my laptop when I&#8217;m in front of TV and I wanted to send videos from browser to Google TV. I wrote a simple Node.js server to receive videos from browser and send them to Google TV. A Google Chrome extension made it easy to send videos right from right click menu
@@ -99,9 +99,9 @@ Pairing chrome extension and Google TV client is not very user friendly at the m
   
   <entry>
     <title type="html"><![CDATA[Quick Sprite: A Tool For Creating CSS Sprite Images In Browser]]></title>
-    <link href="http://mohsen1.github.io/blog/2012/10/14/quick-sprite/"/>
+    <link href="http://mohsen1.github.io/quick-sprite/"/>
     <updated>2012-10-14T00:00:00-07:00</updated>
-    <id>http://mohsen1.github.io/blog/2012/10/14/quick-sprite</id>
+    <id>http://mohsen1.github.io/quick-sprite</id>
     <content type="html"><![CDATA[Today I am releasing my sprite generator tool that is generating CSS sprite image and it&#8217;s CSS code inside the browser. Check it out <a href="http://mohsenweb.com/experiments/quicksprite/">here</a>
 <p>
 <iframe width="560" height="315" src="http://www.youtube.com/embed/gsSAB3ghCls" frameborder="0" allowfullscreen></iframe>
@@ -133,9 +133,9 @@ Right now the app render images below each other in a very tall and thin sprite 
   
   <entry>
     <title type="html"><![CDATA[Underscore.js Deep Pluck Mixin]]></title>
-    <link href="http://mohsen1.github.io/blog/2012/10/12/underscore-js-deep-pluck-mixin/"/>
+    <link href="http://mohsen1.github.io/underscore-js-deep-pluck-mixin/"/>
     <updated>2012-10-12T00:00:00-07:00</updated>
-    <id>http://mohsen1.github.io/blog/2012/10/12/underscore-js-deep-pluck-mixin</id>
+    <id>http://mohsen1.github.io/underscore-js-deep-pluck-mixin</id>
     <content type="html"><![CDATA[<p><code>pluck()</code> method is a convenience version of a common use case of <code>map()</code> that is fetching a property from a collection. I thought it would be great if we could use <code>pluck()</code> to access deeper objects and properties in a collection and made this mixin that make deep plucking possible:</p>
 <pre>
 _.mixin({
@@ -175,9 +175,9 @@ _(myCollection).pluck("a.b.c.d.e.f");
   
   <entry>
     <title type="html"><![CDATA[Chrome Developer Tools Dark Theme]]></title>
-    <link href="http://mohsen1.github.io/blog/2012/10/12/chrome-developer-tools-dark-theme/"/>
+    <link href="http://mohsen1.github.io/chrome-developer-tools-dark-theme/"/>
     <updated>2012-10-12T00:00:00-07:00</updated>
-    <id>http://mohsen1.github.io/blog/2012/10/12/chrome-developer-tools-dark-theme</id>
+    <id>http://mohsen1.github.io/chrome-developer-tools-dark-theme</id>
     <content type="html"><![CDATA[Today I have developed a very nice dark theme for Chrome developer tools using CSS filter property. All I did was just adding <code>-webkit-filter: invert(1);</code> to developer tools html tag and some tweaks to make everything looks good. It works very well and make every page in dev tools dark.</p><p>
 You can find code on <a href="https://github.com/mohsen1/Chrome-Dev-tools-dark-theme" target="_blank">Github</a> and here are some screenshots.
 
@@ -188,9 +188,9 @@ You can find code on <a href="https://github.com/mohsen1/Chrome-Dev-tools-dark-t
   
   <entry>
     <title type="html"><![CDATA[Windows 8 "Loose" Tiles Animations with CSS3]]></title>
-    <link href="http://mohsen1.github.io/blog/2012/10/11/windows-8-loose-tiles-animations-with-css3/"/>
+    <link href="http://mohsen1.github.io/windows-8-loose-tiles-animations-with-css3/"/>
     <updated>2012-10-11T00:00:00-07:00</updated>
-    <id>http://mohsen1.github.io/blog/2012/10/11/windows-8-loose-tiles-animations-with-css3</id>
+    <id>http://mohsen1.github.io/windows-8-loose-tiles-animations-with-css3</id>
     <content type="html"><![CDATA[<h1>What is a loose tile?</h1>
 <p>In Metro design language when we show a list of tiles that are representing options to choose to a user, we want to give user a feeling of an unstable state. This means user should not stay at such page/state for a long time because in Metro design language content is center of user experience and we want to let user reach content she want as soon as possible. Metro gives this unstable state feeling by making tiles react to touch/click like they are not firmly sticked in their place. If you ever used Windows 8 you know how does it feel</p>
 <h1>Using CSS3 Transforms</h1>
@@ -295,9 +295,9 @@ function mousemoveHandler (event) {
   
   <entry>
     <title type="html"><![CDATA[Unfreeze a JavaScript Object]]></title>
-    <link href="http://mohsen1.github.io/blog/2012/10/11/unfreeze-a-javascript-object/"/>
+    <link href="http://mohsen1.github.io/unfreeze-a-javascript-object/"/>
     <updated>2012-10-11T00:00:00-07:00</updated>
-    <id>http://mohsen1.github.io/blog/2012/10/11/unfreeze-a-javascript-object</id>
+    <id>http://mohsen1.github.io/unfreeze-a-javascript-object</id>
     <content type="html"><![CDATA[<h1>Object.prototype.freeze</h1>
 <p><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/Object/freeze" target="_blank"><code>Object.freeze()</code></a> can easily make an object un-editable. After you freeze an object you can not touch it&#8217;s properties. Deleting or changing frozen objects doesn&#8217;t throw an error but doen&#8217;t take effect either.</p>
 <pre>
@@ -338,9 +338,9 @@ obj = _obj;
   
   <entry>
     <title type="html"><![CDATA[Converting Images to HTML code]]></title>
-    <link href="http://mohsen1.github.io/blog/2012/03/22/converting-images-to-html-code/"/>
+    <link href="http://mohsen1.github.io/converting-images-to-html-code/"/>
     <updated>2012-03-22T00:00:00-07:00</updated>
-    <id>http://mohsen1.github.io/blog/2012/03/22/converting-images-to-html-code</id>
+    <id>http://mohsen1.github.io/converting-images-to-html-code</id>
     <content type="html"><![CDATA[I was thinking to a workaround for showing images in email clients that block images. I found out that most of email clients are rendering HTML code. Based on this fact we can show images by hacking HTML code to show each pixel of image as a HTML element and then make background color of that element equal to color of pixel we are presenting. Of course HTML elements should be 1px by 1px without any border, margin or padding.
 
 I started prototyping my idea and after a little bit of tweaking I was able to generate HTML code that is actually renders final result just like original image, pixel per pixel. I used HTML5 canvas element to read image pixels. This means the whole process can happen inside the browser!
@@ -356,9 +356,9 @@ Using the <a href="http://mohsen1.github.com/img2html/#">web app</a> is as easy 
   
   <entry>
     <title type="html"><![CDATA[Making a simple todo app using Backbone.js]]></title>
-    <link href="http://mohsen1.github.io/blog/2012/03/17/backbone-todo/"/>
+    <link href="http://mohsen1.github.io/backbone-todo/"/>
     <updated>2012-03-17T00:00:00-07:00</updated>
-    <id>http://mohsen1.github.io/blog/2012/03/17/backbone-todo</id>
+    <id>http://mohsen1.github.io/backbone-todo</id>
     <content type="html"><![CDATA[I decided to create a tutorial for starting with <a href="http://documentcloud.github.com/backbone/">Backbonejs</a>. I created this simple app to write the tutorial based on it but when I started writing tutorial I found out I&#8217;m not a real tutorial writer. 
 So I put the <a href="https://github.com/mohsen1/Simple-Backbone-TODO">code in Github</a> and live example <a href="http://mohsen1.github.com/Simple-Backbone-TODO/">here</a> and regret making a tutorial. 
 
@@ -368,9 +368,9 @@ Maybe I create the tutorial in future.
   
   <entry>
     <title type="html"><![CDATA[Sliding Puzzle]]></title>
-    <link href="http://mohsen1.github.io/blog/2012/02/21/sliding-puzzle/"/>
+    <link href="http://mohsen1.github.io/sliding-puzzle/"/>
     <updated>2012-02-21T00:00:00-08:00</updated>
-    <id>http://mohsen1.github.io/blog/2012/02/21/sliding-puzzle</id>
+    <id>http://mohsen1.github.io/sliding-puzzle</id>
     <content type="html"><![CDATA[<img src="http://mohsenweb.com/images/slidingpuzzle.png" alt="" />
 
 <a href="http://mohsenweb.com/experiments/slidingpuzzle/">This</a> is an sliding puzzle web application that can be played from size 2x2 to 9x9. You can drag images from your desktop into the browser to make your own puzzle and enjoy playing sliding puzzle.
@@ -379,9 +379,9 @@ Maybe I create the tutorial in future.
   
   <entry>
     <title type="html"><![CDATA[Making a web application in open source community in less than 24 hours]]></title>
-    <link href="http://mohsen1.github.io/blog/2012/02/21/making-a-web-application/"/>
+    <link href="http://mohsen1.github.io/making-a-web-application/"/>
     <updated>2012-02-21T00:00:00-08:00</updated>
-    <id>http://mohsen1.github.io/blog/2012/02/21/making-a-web-application</id>
+    <id>http://mohsen1.github.io/making-a-web-application</id>
     <content type="html"><![CDATA[<img src="http://mohsenweb.com/images/megif.png" alt="" />
 <br />
 
@@ -391,9 +391,9 @@ I was part of <a href="https://github.com/h5bp/mothereffinganimatedgif/network/m
   
   <entry>
     <title type="html"><![CDATA[CSS3 Only Analog Clock]]></title>
-    <link href="http://mohsen1.github.io/blog/2012/02/21/css3-only-analog-clock/"/>
+    <link href="http://mohsen1.github.io/css3-only-analog-clock/"/>
     <updated>2012-02-21T00:00:00-08:00</updated>
-    <id>http://mohsen1.github.io/blog/2012/02/21/css3-only-analog-clock</id>
+    <id>http://mohsen1.github.io/css3-only-analog-clock</id>
     <content type="html"><![CDATA[<img src="http://mohsenweb.com/images/cssclock.png" alt="" />
 <a href="http://mohsenweb.com/experiments/CSSClock/">This</a> is an analog clock that uses zero images and no JavaScript for animation. JavaScript is used only to get current time from browser Date and Time API. This clock is first clock that have haptic feedback animation second hand.
 

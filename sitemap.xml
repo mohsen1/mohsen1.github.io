@@ -1,59 +1,57 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
-        <loc>http://mohsen1.github.io/blog/2012/02/21/css3-only-analog-clock/</loc>
+        <loc>http://mohsen1.github.io/css3-only-analog-clock/</loc>
         <lastmod>2013-09-14T18:53:50-07:00</lastmod>
     </url>
     <url>
-        <loc>http://mohsen1.github.io/blog/2012/02/21/making-a-web-application/</loc>
+        <loc>http://mohsen1.github.io/making-a-web-application/</loc>
         <lastmod>2013-09-14T18:53:50-07:00</lastmod>
     </url>
     <url>
-        <loc>http://mohsen1.github.io/blog/2012/02/21/sliding-puzzle/</loc>
+        <loc>http://mohsen1.github.io/sliding-puzzle/</loc>
         <lastmod>2013-09-14T18:53:50-07:00</lastmod>
     </url>
     <url>
-        <loc>http://mohsen1.github.io/blog/2012/03/17/backbone-todo/</loc>
+        <loc>http://mohsen1.github.io/backbone-todo/</loc>
         <lastmod>2013-09-14T18:53:50-07:00</lastmod>
     </url>
     <url>
-        <loc>http://mohsen1.github.io/blog/2012/03/22/converting-images-to-html-code/</loc>
+        <loc>http://mohsen1.github.io/converting-images-to-html-code/</loc>
         <lastmod>2013-09-14T18:53:50-07:00</lastmod>
     </url>
     <url>
-        <loc>http://mohsen1.github.io/blog/2012/10/11/unfreeze-a-javascript-object/</loc>
+        <loc>http://mohsen1.github.io/unfreeze-a-javascript-object/</loc>
+        <lastmod>2013-09-14T18:53:50-07:00</lastmod>
+    </url>
+    <url>
+        <loc>http://mohsen1.github.io/windows-8-loose-tiles-animations-with-css3/</loc>
+        <lastmod>2013-09-14T18:53:50-07:00</lastmod>
+    </url>
+    <url>
+        <loc>http://mohsen1.github.io/chrome-developer-tools-dark-theme/</loc>
+        <lastmod>2013-09-14T18:53:50-07:00</lastmod>
+    </url>
+    <url>
+        <loc>http://mohsen1.github.io/underscore-js-deep-pluck-mixin/</loc>
+        <lastmod>2013-09-14T18:53:50-07:00</lastmod>
+    </url>
+    <url>
+        <loc>http://mohsen1.github.io/quick-sprite/</loc>
         <lastmod>2013-09-14T18:53:50-07:00</lastmod>
     </url>
     <url>
         <loc>
-            http://mohsen1.github.io/blog/2012/10/11/windows-8-loose-tiles-animations-with-css3/
+            http://mohsen1.github.io/how-did-i-use-node-js-to-remotely-control-my-google-tv/
         </loc>
         <lastmod>2013-09-14T18:53:50-07:00</lastmod>
     </url>
     <url>
-        <loc>http://mohsen1.github.io/blog/2012/10/12/chrome-developer-tools-dark-theme/</loc>
+        <loc>http://mohsen1.github.io/my-js1k-submission/</loc>
         <lastmod>2013-09-14T18:53:50-07:00</lastmod>
     </url>
     <url>
-        <loc>http://mohsen1.github.io/blog/2012/10/12/underscore-js-deep-pluck-mixin/</loc>
-        <lastmod>2013-09-14T18:53:50-07:00</lastmod>
-    </url>
-    <url>
-        <loc>http://mohsen1.github.io/blog/2012/10/14/quick-sprite/</loc>
-        <lastmod>2013-09-14T18:53:50-07:00</lastmod>
-    </url>
-    <url>
-        <loc>
-            http://mohsen1.github.io/blog/2013/01/17/how-did-i-use-node-js-to-remotely-control-my-google-tv/
-        </loc>
-        <lastmod>2013-09-14T18:53:50-07:00</lastmod>
-    </url>
-    <url>
-        <loc>http://mohsen1.github.io/blog/2013/03/06/my-js1k-submission/</loc>
-        <lastmod>2013-09-14T18:53:50-07:00</lastmod>
-    </url>
-    <url>
-        <loc>http://mohsen1.github.io/blog/2013/09/14/string-direction-in-javascript/</loc>
+        <loc>http://mohsen1.github.io/string-direction-in-javascript/</loc>
         <lastmod>2013-09-14T18:53:50-07:00</lastmod>
     </url>
     <url>

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Experiments | Mohsen Azimi]]></title>
   <link href="http://mohsen1.github.io/blog/categories/experiments/atom.xml" rel="self"/>
   <link href="http://mohsen1.github.io/"/>
-  <updated>2013-09-14T18:54:43-07:00</updated>
+  <updated>2013-09-15T11:52:21-07:00</updated>
   <id>http://mohsen1.github.io/</id>
   <author>
     <name><![CDATA[Mohsen Azimi]]></name>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Sliding Puzzle]]></title>
-    <link href="http://mohsen1.github.io/blog/2012/02/21/sliding-puzzle/"/>
+    <link href="http://mohsen1.github.io/sliding-puzzle/"/>
     <updated>2012-02-21T00:00:00-08:00</updated>
-    <id>http://mohsen1.github.io/blog/2012/02/21/sliding-puzzle</id>
+    <id>http://mohsen1.github.io/sliding-puzzle</id>
     <content type="html"><![CDATA[<p><img src="http://mohsenweb.com/images/slidingpuzzle.png" alt="" /></p>
 
 <p><a href="http://mohsenweb.com/experiments/slidingpuzzle/">This</a> is an sliding puzzle web application that can be played from size 2x2 to 9x9. You can drag images from your desktop into the browser to make your own puzzle and enjoy playing sliding puzzle.</p>
@@ -26,9 +26,9 @@
   
   <entry>
     <title type="html"><![CDATA[CSS3 Only Analog Clock]]></title>
-    <link href="http://mohsen1.github.io/blog/2012/02/21/css3-only-analog-clock/"/>
+    <link href="http://mohsen1.github.io/css3-only-analog-clock/"/>
     <updated>2012-02-21T00:00:00-08:00</updated>
-    <id>http://mohsen1.github.io/blog/2012/02/21/css3-only-analog-clock</id>
+    <id>http://mohsen1.github.io/css3-only-analog-clock</id>
     <content type="html"><![CDATA[<p><img src="http://mohsenweb.com/images/cssclock.png" alt="" />
 <a href="http://mohsenweb.com/experiments/CSSClock/">This</a> is an analog clock that uses zero images and no JavaScript for animation. JavaScript is used only to get current time from browser Date and Time API. This clock is first clock that have haptic feedback animation second hand.</p>
 

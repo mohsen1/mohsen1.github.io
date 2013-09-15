@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Category: JavaScript - Mohsen Azimi</title>
+  <title>Unfreeze a JavaScript Object - Mohsen Azimi</title>
   <meta name="author" content="Mohsen Azimi">
 
   
-  <meta name="description" content="Category: JavaScript">
+  <meta name="description" content="Object.prototype.freeze Object.freeze() can easily make an object un-editable. After you freeze an object you can not touch it&#8217;s properties. &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://mohsen1.github.ioblog/categories/javascript">
+  <link rel="canonical" href="http://mohsen1.github.io/unfreeze-a-javascript-object">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Mohsen Azimi" type="application/atom+xml">
@@ -64,35 +64,120 @@
   <div id="main">
     <div id="content">
       <div>
-<article role="article">
+<article class="hentry" role="article">
   
   <header>
-    <h1 class="entry-title">Category: JavaScript</h1>
+    
+      <h1 class="entry-title">Unfreeze a JavaScript Object</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-10-11T00:00:00-07:00" pubdate data-updated="true">Oct 11<span>th</span>, 2012</time>
+        
+      </p>
     
   </header>
-  
-  <div id="blog-archives" class="category">
 
 
-
-  
-  <h2>2012</h2>
-
-<article>
-  
-<h1><a href="/unfreeze-a-javascript-object/">Unfreeze a JavaScript Object</a></h1>
-<time datetime="2012-10-11T00:00:00-07:00" pubdate><span class='month'>Oct</span> <span class='day'>11</span> <span class='year'>2012</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/javascript/'>JavaScript</a></span>
-</footer>
-
-
-</article>
-
+<div class="entry-content"><h1>Object.prototype.freeze</h1>
+<p><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/Object/freeze" target="_blank"><code>Object.freeze()</code></a> can easily make an object un-editable. After you freeze an object you can not touch it&#8217;s properties. Deleting or changing frozen objects doesn&#8217;t throw an error but doen&#8217;t take effect either.</p>
+<pre>
+var o = {val: 1};
+Object.freeze(o);
+o.val = 2; // this will not make any change to `o`
+Object.isFrozen(o); // true
+o.val === 1; // true
+</pre>
+<h1>Why do we need to unfreeze an object?</h1>
+<p>It seems strange to freeze an object at first place and then try to unfreeze it afterwards. But in some situations you don&#8217;t have control over all codebase and you face frozen objects that and you want to change that object for reasons like debugging, testing, etc.</p>
+<p>For example I was writing Jasmine tests for my WinJS application and Jasmine&#8217;s <code>spy()</code> method was not able spy on frozen WinJS objects methods. Windows doesn&#8217;t allow developers to touch WinJS code.</p>
+<p>Freezing an object is the ultimate form of lock-down. Once an object has been frozen it cannot be unfrozen - nor can it be tampered in any manner.</p>
+<h1>How to unfreeze?</h1>
+<p>Basically you can not unfreeze an object using JavaScript language methods. There is no <code>Object.unfreeze()</code> Method. Unfortunately a &#8220;copy&#8221; of the frozen Object is frozen too:</p>
+<pre>
+var o = {val: 1};
+Object.freeze(o);
+var _o = o;
+Object.isFrozen(_o) // true
+</pre>
+<p>Solution is to clone the frozen object and work with that object instead. By creating a brand new object and filling all properties from original(frozen) object to it we get equal object that is not frozen.</p>
+<pre>
+var obj = {val: 1, max: 10};
+Object.freeze(obj)
+var _obj = {};
+for (var prop in obj) {
+   if(obj.hasOwnProperty(prop)) {
+      _obj[prop] = obj[prop];
+   }
+}
+Object.isFrozen(_obj); //false
+//now you can replace original object with the unfrozen one
+obj = _obj;
+</pre>
 </div>
 
+
+  <footer>
+    <p class="meta">
+      
   
+
+<span class="byline author vcard">Posted by <span class="fn">Mohsen Azimi</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-10-11T00:00:00-07:00" pubdate data-updated="true">Oct 11<span>th</span>, 2012</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/javascript/'>JavaScript</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://mohsen1.github.io/unfreeze-a-javascript-object/" data-via="" data-counturl="http://mohsen1.github.io/unfreeze-a-javascript-object/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/converting-images-to-html-code/" title="Previous Post: Converting Images to HTML code">&laquo; Converting Images to HTML code</a>
+      
+      
+        <a class="basic-alignment right" href="/windows-8-loose-tiles-animations-with-css3/" title="Next Post: Windows 8 "Loose" Tiles Animations with CSS3">Windows 8 "Loose" Tiles Animations with CSS3 &raquo;</a>
+      
+    </p>
+  </footer>
 </article>
 
 </div>

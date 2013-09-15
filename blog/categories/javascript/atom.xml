@@ -4,7 +4,7 @@
   <title><![CDATA[Category: JavaScript | Mohsen Azimi]]></title>
   <link href="http://mohsen1.github.io/blog/categories/javascript/atom.xml" rel="self"/>
   <link href="http://mohsen1.github.io/"/>
-  <updated>2013-09-14T18:54:43-07:00</updated>
+  <updated>2013-09-15T11:52:21-07:00</updated>
   <id>http://mohsen1.github.io/</id>
   <author>
     <name><![CDATA[Mohsen Azimi]]></name>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Unfreeze a JavaScript Object]]></title>
-    <link href="http://mohsen1.github.io/blog/2012/10/11/unfreeze-a-javascript-object/"/>
+    <link href="http://mohsen1.github.io/unfreeze-a-javascript-object/"/>
     <updated>2012-10-11T00:00:00-07:00</updated>
-    <id>http://mohsen1.github.io/blog/2012/10/11/unfreeze-a-javascript-object</id>
+    <id>http://mohsen1.github.io/unfreeze-a-javascript-object</id>
     <content type="html"><![CDATA[<h1>Object.prototype.freeze</h1>
 
 
