@@ -1,0 +1,77 @@
+---
+layout: post
+title:  "You don't have to ask developers to install Bower and Grunt to start your app"
+date:   2014-12-18 00:28:39
+categories: web tools
+---
+
+It's very common in font-end applications to have [Bower](http://bower.io/) dependencies and use [Grunt](http://gruntjs.com/) (or [Gulp](http://gulpjs.com/)) for their build system. Usually in README document it's stated that you need to install Bower and Grunt globally before you can start the project.
+
+{% highlight sh %}
+npm install -g bower grunt-cli
+git clone git://myapp.git
+cd my app
+npm install
+bower install
+grunt serve
+{% endhighlight %}
+
+In [Swagger Editor](https://github.com/swagger-api/swagger-editor) project, I made this process as simple as `git clone` and then `npm start`.
+
+{% highlight sh %}
+git clone git@github.com:swagger-api/swagger-editor.git
+cd swagger-editor
+npm start
+{% endhighlight %}
+
+No need for installing Bower or Grunt. It also works in Windows.
+
+### npm scripts to rescue!
+
+With [npm scripts](https://docs.npmjs.com/misc/scripts) we can remove dependencies to global installation of Bower and Grunt and also install npm and Bower packages automatically. First of all we need to install Bower and Grunt as developer dependencies of our app.
+
+{% highlight sh %}
+npm install --save-dev bower grunt-cli
+{% endhighlight %}
+
+Now, using npm scripts fields we can define `start` script to trigger `npm install`, `bower install` and then `grunt serve`.
+
+{% highlight json %}
+"scripts": {
+  "start": "npm install; ./node_modules/bower/bin/bower install; grunt; ./node_modules/grunt-cli/bin/grunt serve"
+}
+{% endhighlight %}
+
+Now, `git clone` and then `npm start` will do everything you need. This will work perfectly in Linux and OS X because `"start"` is simply a Bash script. But Windows doesn't have Bash and there is going to be some problems in Windows.
+
+To solve Windows issues, we can put all of the start tasks into a JavaScript file, then inside  `start` script in `package.json` we simply execute it with global `node` executable. Since command for executing Node.js files is the same in Windows and Unix, it will work across platforms.
+We will need to use programmatic interfaces of npm, Bower and Grunt in our JavaScript script. In my case, I named this script, `start.js` and placed in root of my app directory.
+
+#### `start.js`
+
+{% highlight javascript linenos %}
+var bower = require('bower');
+var grunt = require('grunt');
+
+bower.commands
+  .install()
+  .on('error', function (error) {
+    console.error(error)
+  })
+  .on('end', function () {
+    grunt.tasks('serve');
+  });
+{% endhighlight %}
+
+For installing Node modules, we can use `prestart` script. npm always calls `prestart` before calling `start` script. It's a good opportunity to install node dependencies there.
+
+{% highlight json %}
+"scripts": {
+    "prestart": "npm install",
+    "start": "node start.js"
+  }
+{% endhighlight %}
+
+Now we can use `npm start` across platforms and don't ask developers to install Bower or Grunt globally!
+
+*Pro tip:* If you name your script, `server.js` you don't even have to have a `start` field in  `scritps` of your `package.json`, npm will automatically run `node server.js` for `npm start` command
