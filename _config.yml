@@ -1,7 +1,7 @@
 # Site settings
 title: Mohsen Azimi
 email: mohsen@mohsenweb.com
-description: This is my personal weblog. I write to get better at writing. If you find my writings useful it's win-win!
+description: Mohsen Azimi's personal weblog
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://mohsenweb.com" # the base hostname & protocol for your site
 twitter_username: "mohsen____"
