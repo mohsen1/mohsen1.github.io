@@ -17,6 +17,13 @@
     margin-bottom: 0;
     float: left;
 
+    font-family: 'Shadows Into Light Two', cursive;
+    font-size: 30px;
+
+    &,&:hover {
+        text-decoration: none;
+    }
+
     &,
     &:visited {
         color: $grey-color-dark;

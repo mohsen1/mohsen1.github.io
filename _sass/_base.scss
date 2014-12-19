@@ -1,3 +1,5 @@
+@import "pages";
+
 /**
  * Reset some basic elements
  */
@@ -14,7 +16,7 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
-    font-family: $base-font-family;
+    font-family: 'Droid Serif', serif;
     font-size: $base-font-size;
     line-height: $base-line-height;
     font-weight: 300;
@@ -35,7 +37,9 @@ ul, ol, dl, figure,
     margin-bottom: $spacing-unit / 2;
 }
 
-
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+}
 
 /**
  * Images

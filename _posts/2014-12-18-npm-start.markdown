@@ -36,7 +36,7 @@ npm install --save-dev bower grunt-cli
 
 Now, using npm scripts fields we can define `start` script to trigger `npm install`, `bower install` and then `grunt serve`.
 
-{% highlight json %}
+{% highlight javascript %}
 "scripts": {
   "start": "npm install; ./node_modules/bower/bin/bower install; grunt; ./node_modules/grunt-cli/bin/grunt serve"
 }
@@ -52,7 +52,7 @@ We will need to use programmatic interfaces of npm, Bower and Grunt in our JavaS
 
 For installing Node modules, we can use `prestart` script. npm always calls `prestart` before calling `start` script. It's a good opportunity to install node dependencies there.
 
-{% highlight json %}
+{% highlight javascript %}
 "scripts": {
     "prestart": "npm install",
     "start": "node start.js"
