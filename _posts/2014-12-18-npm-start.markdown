@@ -48,20 +48,7 @@ To solve Windows issues, we can put all of the start tasks into a JavaScript fil
 We will need to use programmatic interfaces of npm, Bower and Grunt in our JavaScript script. In my case, I named this script, `start.js` and placed in root of my app directory.
 
 #### `start.js`
-
-{% highlight javascript linenos %}
-var bower = require('bower');
-var grunt = require('grunt');
-
-bower.commands
-  .install()
-  .on('error', function (error) {
-    console.error(error)
-  })
-  .on('end', function () {
-    grunt.tasks('serve');
-  });
-{% endhighlight %}
+{% gist mohsen1/b3a6e0db2dca908e2c4d start.js %}
 
 For installing Node modules, we can use `prestart` script. npm always calls `prestart` before calling `start` script. It's a good opportunity to install node dependencies there.
 
