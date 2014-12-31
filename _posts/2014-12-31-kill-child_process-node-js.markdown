@@ -20,9 +20,9 @@ The program above will not quit if `my-command` spins up some more processes.
 We can start child processes with `{detached: true}` option so those processes will not be attached to main process but they will go to a new group of processes. Then using `process.kill(-pid)` method on main process we can kill all processes that are in the same group of a child process with the same `pid` group. In my case, I only have one processes in this group.
 
 {% highlight javascript %}
-var spawn = require('child_process', {detached: true}).spawn;
+var spawn = require('child_process').spawn;
 
-var child = spawn('my-command');
+var child = spawn('my-command', {detached: true});
 
 process.kill(-child.pid);
 {% endhighlight %}
