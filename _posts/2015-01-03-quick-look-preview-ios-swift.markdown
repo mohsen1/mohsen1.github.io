@@ -8,7 +8,7 @@ When setting breakpoints in XCode, it's quite hard to see what exactly is inside
 
 For example, in my `File` class, I've implemented this method in my class. As you can see the output is very useful and handy for debugging. It works great for `NSManagedObject`s too!
 
-![Quick look of an object in XCode](/assets/images/ios-quicklook.jpg)
+![Quick look of an object in XCode](/assets/images/ios-quicklook.png)
 
 {% highlight swift %}
 class File: NSManagedObject {
