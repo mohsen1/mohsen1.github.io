@@ -1,3 +1,11 @@
-# Books I recommend
+---
+layout: page
+title: Books
+permalink: /books/
+---
 
-<a href="http://www.amazon.com/gp/product/0321942051/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0321942051&linkCode=as2&tag=azimi-20&linkId=DDUASSK3IXJDYIOH">iOS Programming: The Big Nerd Ranch Guide (4th Edition) (Big Nerd Ranch Guides)</a><img src="http://ir-na.amazon-adsystem.com/e/ir?t=azimi-20&l=as2&o=1&a=0321942051" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+
+### Books I recommend
+
+<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=tf_til&ad_type=product_link&tracking_id=mohseazimiper-20&marketplace=amazon&region=US&placement=0321942051&asins=0321942051&linkId=TDVEX2ZZ5232URNZ&show_border=true&link_opens_in_new_window=true">
+</iframe>
