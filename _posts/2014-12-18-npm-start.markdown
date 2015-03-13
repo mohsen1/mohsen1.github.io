@@ -38,27 +38,10 @@ Now, using npm scripts fields we can define `start` script to trigger `npm insta
 
 {% highlight javascript %}
 "scripts": {
-  "start": "npm install; ./node_modules/bower/bin/bower install; grunt; ./node_modules/grunt-cli/bin/grunt serve"
+  "start": "npm install; bower install; grunt; grunt serve"
 }
 {% endhighlight %}
 
-Now, `git clone` and then `npm start` will do everything you need. This will work perfectly in Linux and OS X because `"start"` is simply a Bash script. But Windows doesn't have Bash and there is going to be some problems in Windows.
-
-To solve Windows issues, we can put all of the start tasks into a JavaScript file, then inside  `start` script in `package.json` we simply execute it with global `node` executable. Since command for executing Node.js files is the same in Windows and Unix, it will work across platforms.
-We will need to use programmatic interfaces of npm, Bower and Grunt in our JavaScript script. In my case, I named this script, `start.js` and placed in root of my app directory.
-
-#### `start.js`
-{% gist mohsen1/b3a6e0db2dca908e2c4d start.js %}
-
-For installing Node modules, we can use `prestart` script. npm always calls `prestart` before calling `start` script. It's a good opportunity to install node dependencies there.
-
-{% highlight javascript %}
-"scripts": {
-    "prestart": "npm install",
-    "start": "node start.js"
-  }
-{% endhighlight %}
-
-Now we can use `npm start` across platforms and don't ask developers to install Bower or Grunt globally!
+Now, `git clone` and then `npm start` will do everything you need. This will work perfectly in Linux, OS X and Windows because `"start"` is simply a Bash script that uses `./node_moduels/.bin` as `$PATH`. So even if user don't have Gulp installed globally, `gulp` command in your npm script will execute `gulp` binary in `./node_modules/.bin`.
 
 *Pro tip:* If you name your script, `server.js` you don't even have to have a `start` field in  `scritps` of your `package.json`, npm will automatically run `node server.js` for `npm start` command
