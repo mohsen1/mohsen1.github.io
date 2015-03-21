@@ -1,6 +1,6 @@
 # Site settings
 title: Mohsen Azimi
-email: mohsen@azimi.me
+email: me@azimi.me
 description: Mohsen Azimi's personal weblog
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://azimi.me" # the base hostname & protocol for your site
