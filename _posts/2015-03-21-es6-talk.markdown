@@ -1,0 +1,19 @@
+---
+layout: post
+title:  "Slides from my talk: Working with Arrays and Objects in modern JavaScript"
+date:   2015-03-21 10:58:39
+categories:
+---
+
+Here are my slides my talk that I gave in [BayNode](http://www.meetup.com/BayNode/) Meetup about `Object` and `Array` objects in ES5 and ES6.
+
+<iframe
+    src="http://azimi.me/presentations/objects-arrays-js/index.html"
+    frameborder="0"
+    style="
+        min-height: 400px;
+        width: 100%;
+    "
+></iframe>
+
+[Go to slides](http://azimi.me/presentations/objects-arrays-js/index.html)
