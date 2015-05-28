@@ -2,6 +2,7 @@
 layout: post
 title:  Get QuickLook Preview of Swift objects in XCode
 date:   2015-01-03 00:28:39
+tags: [swift, ios]
 ---
 
 When setting breakpoints in XCode, it's quite hard to see what exactly is inside an object. All XCode give you is memory address of that object. In XCode 6 it's possible to overcome this by implementing `debugQuickLookObject` method in your object. This function will be called when program is stopped by a breakpoint and you hover over the object and select the little eye icon.

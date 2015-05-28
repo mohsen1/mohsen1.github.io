@@ -2,7 +2,7 @@
 layout: post
 title:  "You don't have to ask developers to install Bower and Grunt to start your app"
 date:   2014-12-18 00:28:39
-categories:
+tags: [js, node]
 ---
 
 It's very common in font-end applications to have [Bower](http://bower.io/) dependencies and use [Grunt](http://gruntjs.com/) (or [Gulp](http://gulpjs.com/)) for their build system. Usually in README document it's stated that you need to install Bower and Grunt globally before you can start the project.

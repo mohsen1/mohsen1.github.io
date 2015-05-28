@@ -2,7 +2,7 @@
 layout: post
 title:  "Slides from my talk: Working with Arrays and Objects in modern JavaScript"
 date:   2015-03-21 10:58:39
-categories:
+tags: [talk]
 ---
 
 Here are my slides my talk that I gave in [BayNode](http://www.meetup.com/BayNode/) Meetup about `Object` and `Array` objects in ES5 and ES6.

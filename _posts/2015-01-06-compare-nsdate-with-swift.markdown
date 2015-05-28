@@ -2,6 +2,7 @@
 layout: post
 title:  Compare NSDate instance with ease in Swift
 date:   2015-01-06 18:28:39
+tags: [swift]
 ---
 
 To make it easy comparing two `NSDate` instances in Swift we can overload `<=`, `>=`, `>`, `<` and `==` operators with `NSDate` types on left and right hand sides of overloading functions. `timeIntervalSince1970` is a safe measure for comparing most dates. I used `timeIntervalSince1970` to make the decision if two dates are equal, less or greater.

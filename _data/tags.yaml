@@ -1,0 +1,10 @@
+- slug: node
+  name: Node.js
+- slug: talk
+  name: Talks
+- slug: js
+  name: JavaScript
+- slug: swift
+  name: swift
+- slug: ios
+  name: iOS

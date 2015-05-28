@@ -2,6 +2,7 @@
 layout: post
 title:  How to kill child processes that spawn their own child processes in Node.js
 date:   2014-12-31 00:28:39
+tags: [node, js]
 ---
 
 If a child process in Node.js spawn their own child processes, `kill()` method will not kill the child process's own child processes. For example, if I start a process that starts it's own child processes via `child_process` module, killing that child process will not make my program to quit.

@@ -2,7 +2,7 @@
 layout: post
 title:  "Slides from my talk: My Experience in Building Swagger Editor"
 date:   2015-04-23 15:18:39
-categories:
+tags: [talk]
 ---
 
 Here are my slides my talk that I gave in [SouthBay JavaScript](http://www.meetup.com/southbayjs/events/221522790/) Meetup about my experience building [Swagger Editor](https://github.com/swagger-api/swagger-editor)
