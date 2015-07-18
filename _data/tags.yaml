@@ -8,3 +8,5 @@
   name: swift
 - slug: ios
   name: iOS
+- slug: swagger
+  name: Swagger

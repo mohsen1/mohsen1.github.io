@@ -40,6 +40,11 @@ ul, ol, dl, figure,
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Merriweather', sans-serif;
     font-weight: normal;
+    a {
+      &, &:hover {
+        border-bottom: none;
+      }
+    }
 }
 
 /**
@@ -96,14 +101,15 @@ h1, h2, h3, h4, h5, h6 {
 a {
     color: $brand-color;
     text-decoration: none;
+    display: inline-block;
+    border-bottom: 1px dashed blue;
 
     &:visited {
-        color: darken($brand-color, 15%);
+      background: lighten($brand-color, 40%);
     }
 
     &:hover {
-        color: $text-color;
-        text-decoration: underline;
+        border-bottom-style: solid;
     }
 }
 
