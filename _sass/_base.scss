@@ -16,7 +16,7 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
-    font-family: 'Droid Serif', serif;
+    font-family: 'Noto Sans', sans-serif;
     font-size: $base-font-size;
     line-height: $base-line-height;
     font-weight: 300;
@@ -38,8 +38,8 @@ ul, ol, dl, figure,
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Merriweather', sans-serif;
-    font-weight: normal;
+    font-family: 'Istok Web', sans-serif;
+    font-weight: bold;
     a {
       &, &:hover {
         border-bottom: none;
