@@ -54,7 +54,7 @@ $green:    #3AE25C; //  operators, other keywords
     .m { color: $cyan; } /* Literal.Number */
     .s { color: $cyan; } /* Literal.String */
     .na { color: $body; } /* Name.Attribute */
-    .nb { color: #B58900 } /* Name.Builtin */
+    .nb { color: $orange } /* Name.Builtin */
     .nc { color: $blue; } /* Name.Class */
     .no { color: $orange; } /* Name.Constant */
     .nd { color: $blue; } /* Name.Decorator */
