@@ -65,10 +65,11 @@ console.timeEnd('async: blocking time');
 
 #### Result:
 
-{% highlight ruby %}
+{% highlight python %}
 sync: total time (blocking): 1.149ms
-async-json.js:18 async: blocking time: 0.745ms
-async-json.js:16 async: total time: 3.232ms
+async: blocking time: 0.745ms
+async: total time: 3.232ms
+
 {% endhighlight %}
 
 The async method is about 2x slower but her, it's async and using it blocked the UI for less than a millisecond!
