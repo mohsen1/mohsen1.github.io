@@ -72,7 +72,7 @@ async: total time: 3.232ms
 
 {% endhighlight %}
 
-The async method is about 2x slower but her, it's async and using it blocked the UI for less than a millisecond!
+The async method is about 2x slower but hey, it's async and using it blocked the UI for less than a millisecond!
 
 ### Conclusion
 I'll experiment with this and if it made sense I'll make a package and publish it. I hope JavaScript or DOM provides native non-blocking JSON APIs so we don't have to do hacks like this. With `async/await` in ES7(ES2016) working with async methods are much easier so we should have async JSON APIs as well.
