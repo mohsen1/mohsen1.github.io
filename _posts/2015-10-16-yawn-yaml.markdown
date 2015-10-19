@@ -1,0 +1,47 @@
+---
+layout: post
+title:  "YAML manipulation library that keeps comments and styling"
+date:   2015-10-16 10:34:03
+tags: [js]
+---
+
+The usual way for manipulating a YAML file in JavaScript is to convert it to JSON, modify the JSON and then convert JSON back to YAML. Unfortunately this process will remove any comment and can mess up the styling of the document.
+
+
+{% highlight javascript %}
+const yamlString = `
+  # my value
+  value: 100
+`;
+const json = YAML.load(yamlString);
+
+// updating the value
+json.value = 200;
+
+// getting back the YAML. Comments are gone...
+console.log(YAML.dump(json)); // => `value: 100`
+{% endhighlight %}
+
+This was a problem in number of projects that we were using YAML. We wanted to update some values in YAML files without loosing the formatting and comments.
+
+I wrote the [YAWN YAML](https://github.com/mohsen1/yawn-yaml) library to solve this problem. YAWN YAML uses the Abstract Syntax Tree(AST) of a YAML document to rebuild the file structure upon changes. This makes it possible to change a value in the YAML document without loosing structure of the document.
+
+Here is an example of how it works:
+
+{% highlight javascript %}
+import YAWN from 'ywan-yaml';
+let str = `
+# my comment
+value: 1 # the value is here!
+`;
+
+let yawn = new YAWN(str);
+
+yawn.json = {value: 2};
+
+console.log(yawn.yaml); // =>
+// # my comment
+// value: 1 # the value is here!
+{% endhighlight %}
+
+This library is heavily tested and can be used in browser and Node.js environments. Please [file a bug](https://github.com/mohsen1/yawn-yaml/issues) if you found one.
