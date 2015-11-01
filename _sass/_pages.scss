@@ -1,5 +1,10 @@
-.avatar {
-    padding-right: 10px;
-    float: left;
-    img { max-width: 100px; }
+.about {
+  display: flex;
+
+  .avatar {
+      padding-right: 10px;
+
+      img { max-width: 15vw; }
+  }
 }
+
