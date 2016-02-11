@@ -9,6 +9,3 @@ github_username:  mohsen1
 
 # Build settings
 markdown: kramdown
-kramdown:
-  input: GFM
-highlighter: pygments

@@ -44,4 +44,6 @@ console.log(yawn.yaml); // =>
 // value: 1 # the value is here!
 {% endhighlight %}
 
+Please note that you need to replace `.json` value of the `yawn` instance object. This is because the setter function is looking at the new JSON and reconstruct the YAML structure.
+
 This library is heavily tested and can be used in browser and Node.js environments. Please [file a bug](https://github.com/mohsen1/yawn-yaml/issues) if you found one.
