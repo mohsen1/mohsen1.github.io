@@ -5,15 +5,24 @@ permalink: /about/
 ---
 
 <div class="about">
-  <div class="avatar">
-      <img src="/assets/images/avatar.jpg">
-  </div>
+ 
 
   <div class="text">
 
-    <p>I'm a software engineer specialized in web based application development. I grow up in Iran and moved to United States after I graduated from Azad University of Tehran. I live in sunny Palo Alto, California with my lovely wife.</p>
+    <p>
+      I'm a software engineer specialized in web application development. I'm passionate about 
+      free open source software and open web platform.
+    </p>
+    <p>
+      In this blog, I write about my professional experience and problems I solve at work.
+    </p>
+    <p>
+      I am happily employed and not looking for jobs. Please don't contact me regarding job 
+      ooputionities. 
+    </p>
+      
 
-    <p>You can find me on following networks:</p>
+    <p>Find me on following networks:</p>
 
     <ul>
       <li><a href="https://twitter.com/mohsen____">Twitter</a></li>
