@@ -5,6 +5,19 @@ date:   2015-07-30 21:48:19
 tags: [swagger]
 ---
 
+### Update (June 2016)
+Right after I published this blog post I received [this response](https://github.com/nodejs/node/issues/2031#issuecomment-126840751) from amazing Node.js developer
+Vladimir Kurchatkin that JSON parsing is not happening in a different thread and in fact it is blocking the main thread. In [this tweet](https://twitter.com/mohsen____/status/628634836710756352)
+I admited I was wrong and I need to update my post.
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/j5bot">@j5bot</a> I need to update that post. It&#39;s not really in a background thread. It&#39;s doing the process in the next tick.<a href="https://t.co/5WMeTWb79K">https://t.co/5WMeTWb79K</a></p>&mdash; Mohsen Azimi (@mohsen____) <a href="https://twitter.com/mohsen____/status/628634836710756352">August 4, 2015</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+ [Nolan Lawson](https://twitter.com/nolanlawson) made following video to demonstrate the effect in multiple browsers:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Ls8zZ4n5DUE" frameborder="0" allowfullscreen></iframe>
+
+
 ### The problem
 
 I am working on [Swagger Editor](https://github.com/swagger-api/swagger-editor) performance. One of the solutions to speed things up was moving process-intensive task to Web Workers. Web Workers do a great job of moving process-heavy tasks out of the main thread but the way we can communicate with them is very slow. For each message to be sent to or received from a worker we need to convert it to a string. This means for transferring objects between the main thread and worker threads we need to `JSON.parse` and `JSON.stringify` our objects back and forth.
