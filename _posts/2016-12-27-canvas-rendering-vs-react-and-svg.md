@@ -21,7 +21,7 @@ React and other DOM diffing libraries are trying to make it easier for browser t
 The React implementation is also using mouse move event throttling and `requestAnimationFrame` to reduce number of updates.
 But browsers have to consider so many different aspects of web platform while applying the update that it makes it very hard for them to be spec compliant and perform well at the same time.
 
-Web platform is full of amazing features. It's very easy to make good looking apps using CSS and HTML. Simple things like `text-shadow` is really hard to implement if the only API for rendering apps was just `canvas` APIs.
+Web platform is full of amazing features. It's very easy to make good looking apps using CSS and HTML. Simple things like `text-shadow` would be really hard to implement if the only API for rendering apps was just `canvas` APIs.
 
 I'm not a browser engineer and don't know how browsers work. I'm making this assumption that when browser receives a DOM update from JavaScript it has to go through so many hoops to make sure everything is rendering per spec. While `canvas` is a very low level API that lets you draw whatever you want on. The low level API makes `canvas` fast.
 
