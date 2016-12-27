@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "\"Use the platform\" is not always the best advise"
+title:  "\"Use the platform\" is not always the best advice"
 date:   2016-12-27 13:00:00
 tags: [js]
 ---
@@ -25,7 +25,7 @@ Web platform is full of amazing features. It's very easy to make good looking ap
 
 I'm not a browser engineer and don't know how browsers work. I'm making this assumption that when browser receives a DOM update from JavaScript it has to go through so many hoops to make sure everything is rendering per spec. While `canvas` is a very low level API that lets you draw whatever you want on. The low level API makes `canvas` fast.
 
-Sometimes "use the platform" is not good advise because platform is polluted with tons of feature that you might not know about but browser has to take them into account.
+Sometimes "use the platform" is not good advice because platform is polluted with tons of feature that you might not know about but browser has to take them into account.
 
 #### Canvas DOM vs. iOS Core Graphics and UIKit
 HTML canvas element API is similar to Apple Core Graphics library and DOM is similar to Apple's UIKit. I've done a little bit iOS development and learned that any UIKit component is using Core Graphics library to draw pixels. iOS developers can make custom components that uses Core Graphics library or override parts of UIKit components using Core Graphics API. It's very powerful that developers can mix and match low level and high level APIs to achieve their goals.
