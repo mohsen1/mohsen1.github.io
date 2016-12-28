@@ -27,7 +27,7 @@ I'm not a browser engineer and don't know how browsers work. I'm making this ass
 
 Sometimes "use the platform" is not good advice because platform is polluted with tons of feature that you might not know about but browser has to take them into account.
 
-## Canvas DOM vs. iOS Core Graphics and UIKit
+## Canvas and DOM vs. iOS Core Graphics and UIKit
 HTML canvas element API is similar to Apple Core Graphics library and DOM is similar to Apple's UIKit. I've done a little bit iOS development and learned that any UIKit component is using Core Graphics library to draw pixels. iOS developers can make custom components that uses Core Graphics library or override parts of UIKit components using Core Graphics API. It's very powerful that developers can mix and match low level and high level APIs to achieve their goals.
 Web as a platform does not allow easy access to pixel drawing and layout computation algorithms. The default layout system is always enabled. It's not possible to tell browsers how to lay things on the page in a programmatic way. It's also not possible to have web components that render their own pixels without breaking web accessibility.
 
