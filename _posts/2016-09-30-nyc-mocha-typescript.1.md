@@ -7,7 +7,7 @@ tags: [js, node]
 
 It's a pleasure to work with a project that uses TypeScript for your source code and tests, although setting up test coverage can be a bit tricky. I recently started a project that uses TypeScript for source as well as the tests.
 
-I used Mocha to run the test and [`nyc`](https://github.com/istanbuljs/nyc) for generating test coverage.
+I used Mocha to run the test and [`nyc`](https://github.com/istanbuljs/nyc) for generating test coverage. You will also need to `npm install --save-dev source-map-support`.
 
 It tooks many hours to figure out a solution that works end-to-end so I wanted to share the end result.
 
@@ -15,16 +15,12 @@ Here is what the npm script section is looking like:
 
 {% highlight json %}
   "scripts": {
-    "test": "nyc --require ts-node/register ./node_modules/.bin/_mocha",
+    "test": "nyc mocha",
   },
   "nyc": {
     "include": [
       "src/**/*.ts",
       "src/**/*.tsx"
-    ],
-    "exclude": [
-      "node_modules/",
-      "dist/"
     ],
     "extension": [
       ".ts",
@@ -46,6 +42,7 @@ Mocha configuration is located in `test/mocha.opts`:
 
 {% highlight plain %}
 --compilers ts-node/register
+--require source-map-support/register
 --full-trace
 --bail
 src/**/*.test.ts src/**/*.test.tsx
