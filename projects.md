@@ -21,7 +21,7 @@ Find it on [Github](https://github.com/apigee-127/swagger-converter)
 
 # [YAWN YAML](https://github.com/mohsen1/yawn-yaml)
 YAML parser that preserves comments and styling
-Find it on [GitHub](https://github.com/mohsen1/yawn-yaml) or see the [live demo](http://azimi.me/yawn-yaml/demo/index.html)
+Find it on [GitHub](https://github.com/mohsen1/yawn-yaml) or see the [live demo](https://azimi.me/yawn-yaml/demo/index.html)
 
 # [String Direction](https://github.com/mohsen1/string-direction)
 A utility for getting direction of a string in JavaScript. String direction can be left-to-right, right-to-left or bi-directional.
@@ -34,7 +34,7 @@ JSON Schema is very verbose and hard to read in JSON. This directive helps rende
 Find it on [Github](https://github.com/mohsen1/json-schema-view)
 
 # [put.io for iOS](https://github.com/mohsen1/put.io)
-An Open Source iOS client for [put.io](http://put.io) written in Swift
+An Open Source iOS client for [put.io](https://put.io) written in Swift
 
 Find it on [Github](https://github.com/mohsen1/put.io)
 
