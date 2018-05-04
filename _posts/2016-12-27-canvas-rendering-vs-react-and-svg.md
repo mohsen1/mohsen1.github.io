@@ -11,7 +11,7 @@ It's interesting to see how Preact and Vue perform better than React in that dem
 
 <img src="/assets/images/canvas-vs-svg-react.gif" />
 
-[**You can see the demo here**](http://azimi.me/react-fractals/) [[Source](https://github.com/mohsen1/react-fractals)]
+[**You can see the demo here**](https://azimi.me/react-fractals/) [[Source](https://github.com/mohsen1/react-fractals)]
 
 It's important to point out that the canvas demo **does not** throttle the mouse move. It's also not using `requestAnimationFrame`.
 

@@ -10,7 +10,7 @@ Here are my slides my talk that I gave in [SouthBay JavaScript](http://www.meetu
 If you're not familiar with [Swagger](http://swagger.io/) check it out. It's very useful for starting microservices quickly or generate documentations for you API automatically.
 
 <iframe
-    src="http://azimi.me/presentations/building-swagger-editor/index.html"
+    src="https://azimi.me/presentations/building-swagger-editor/index.html"
     frameborder="0"
     style="
         min-height: 400px;
@@ -19,4 +19,4 @@ If you're not familiar with [Swagger](http://swagger.io/) check it out. It's ver
     "
 ></iframe>
 
-[Go to slides](http://azimi.me/presentations/building-swagger-editor/index.html)
+[Go to slides](https://azimi.me/presentations/building-swagger-editor/index.html)
