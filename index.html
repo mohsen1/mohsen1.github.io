@@ -1,22 +1,32 @@
----
-layout: default
----
-
-<div class="home">
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-        <div class="content-wrapper">{{post.content}}</div>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mohsen Azimi</title>
+</head>
+<body>
+    <h1>Mohsen Azimi</h1>
+    <p>I'm a Staff Software Engineer at Airbnb, leading teams to build high-quality, delightful UIs. I'm enthusiastic about open source and fostering globally distributed, async teams.</p>
+    
+    <h2>Some things about me:</h2>
+    <ul>
+        <li>Passionate about open source and quality software</li>
+        <li>Believe in the power of simplicity: making complex systems easy to understand is an art</li>
+        <li>Over a decade of experience in tech, from startups to big tech companies like Google and Lyft</li>
+        <li>Core team member of OpenAPI toolchain and specification; built Swagger Editor and helped the OpenAPI ecosystem thrive</li>
+        <li>Advocate for a collaborative culture, with an emphasis on mentorship and professional growth</li>
+        <li>Inventor with a patent in "Simulated Testing of APIs"</li>
+    </ul>
+    
+    <h2>What I love outside work:</h2>
+    <ul>
+        <li>Avid traveler and hiker</li>
+        <li>Community builder, focused on inclusivity and belonging</li>
+        <li>Electronic music enthusiast, both as a listener and creator</li>
+        <li>Culinary explorer, introducing people to the richness of Persian culture through my cooking</li>
+    </ul>
+    
+    <h2>Contact:</h2>
+    <p>I'm happily employed and not seeking new job opportunities. For everything else, feel free to <a href="https://www.linkedin.com/in/mohsen-azimi-b421679b" target="_blank" rel="noopener noreferrer">connect with me on LinkedIn</a>.</p>
+</body>
+</html>
