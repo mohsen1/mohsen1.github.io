@@ -4,6 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <title>Mohsen Azimi</title>
+    <style>
+      :root {
+        --background: white;
+        --text: black;
+        --link: blue;
+        --link-hover: darkblue;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --background: black;
+          --text: white;
+          --link: lightblue;
+          --link-hover: cyan;
+        }
+      }
+
+      body {
+        background-color: var(--background);
+        color: var(--text);
+      }
+
+      a {
+        color: var(--link);
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: var(--link-hover);
+      }
+    </style>
 </head>
 <body>
     <h1>Mohsen Azimi</h1>
