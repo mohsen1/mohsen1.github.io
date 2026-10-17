@@ -4,6 +4,18 @@ title: Projects
 permalink: /projects/
 ---
 
+# [Session Recorder](/session-recorder-chrome-extension/)
+
+Session Recorder is a free, open-source Chrome extension for recording browser
+bugs for AI coding agents. Capture clicks, console errors, network requests,
+screenshots and voice narration, then export a Markdown report for Claude Code,
+Cursor, Codex or ChatGPT. Recordings stay in your browser; optional voice
+transcription sends audio to the provider you configure.
+
+[Install from the Chrome Web Store](https://chromewebstore.google.com/detail/session-recorder/dboiheheijgmfpfhbmjggiijpgondghh),
+[copy the browser bug report template](/session-recorder-chrome-extension/bug-report-template/),
+or [view the AGPL-3.0 source on GitHub](https://github.com/mohsen1/session-recorder-chrome-extension).
+
 # [Swagger Editor](https://github.com/swagger-api/swagger-editor)
 Swagger Editor lets you edit API specifications in YAML inside your browser and to preview documentations in real time. Valid Swagger JSON descriptions can then be generated and used with the full Swagger tooling (code generation, documentation, etc).
 
