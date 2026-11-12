@@ -31,4 +31,4 @@ Hand the note to someone who maintains an integration. Ask them to underline the
 
 For a full release with multiple changes, [The Good Docs Project's release notes guide](https://www.thegooddocsproject.dev/template/release-notes) provides a structure for organizing customer-facing notes.
 
-This exercise comes from [Wercend](https://wercend.com/). Its public Story example lets you select a moment in a draft and follow it back to the supporting words. To try the same revision method on paper, use the [reverse outline worksheet](https://github.com/mohsen1/wercend-revision-workbook/blob/main/worksheet.md).
+This exercise comes from [Wercend](https://wercend.com/). Its public Story example lets you select a moment in a draft and follow it back to the supporting words. To try the same revision method on paper, use the [reverse outline worksheet](https://azimi.me/wercend-revision-workbook/).

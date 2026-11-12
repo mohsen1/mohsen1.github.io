@@ -12,7 +12,7 @@ to see the passage behind it, then judge whether the words have the effect
 you intended.
 
 [Explore the example draft](https://wercend.com/?utm_source=azimi.me&utm_medium=referral&utm_campaign=projects)
-or [try the reverse outline worksheet](https://github.com/mohsen1/wercend-revision-workbook).
+or [try the reverse outline worksheet](https://azimi.me/wercend-revision-workbook/).
 
 # [Session Recorder](/session-recorder-chrome-extension/)
 
