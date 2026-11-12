@@ -5,7 +5,16 @@
      <meta name="google-site-verification"
              content="4HAVCdoxXjx6F1gDZtovZwCbhuNM7j4c6EJaLfmrUs4" />
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    {% if page.share_description %}
+    <meta name="description" content="{{ page.share_description | escape }}">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="{{ page.title | escape }}">
+    <meta property="og:description" content="{{ page.share_description | escape }}">
+    <meta property="og:url" content="{{ page.url | absolute_url }}">
+    <meta name="twitter:card" content="summary">
+    {% else %}
     <meta name="description" content="{{ site.description }}">
+    {% endif %}
 
     <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">

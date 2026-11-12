@@ -4,7 +4,7 @@ title: "How to write release notes for a breaking change"
 permalink: /writing/release-notes-breaking-change/
 date: 2026-11-13 00:35:00 +0100
 author: Wercend
-description: "A worked example for engineers explaining who needs to act, when to migrate, and how to check that the change worked."
+share_description: "Wercend walks through a CSV header rename to show how release notes can tell engineers who needs to migrate, when to switch, and how to test the change."
 ---
 
 Imagine finding this release note five minutes before approving a dependency upgrade.
